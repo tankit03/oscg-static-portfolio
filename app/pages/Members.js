@@ -1,22 +1,76 @@
-// components/ui/Members.js
+// pages/members.js
+import MemberCard from '@/components/ui/MemberCard';
 
-export default function Members() {
+const members = [
+  {
+    name: 'John Doe',
+    title: 'President',
+    image: '/images/john.jpg', // Replace with actual image paths
+    bio: 'John is the president of the club and loves organizing events.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+  {
+    name: 'Jane Smith',
+    title: 'Vice President',
+    image: '/images/jane.jpg',
+    bio: 'Jane is the vice president and manages club activities.',
+  },
+];
+
+const Members = () => {
   return (
-    <section id="members" className="flex flex-col items-center justify-center mt-16 w-full">
-      <h2 className="font-satoshiBold text-[32px] text-primaryOrange mb-8">
-        Members
+    <div className="container mx-auto py-12 px-6">
+      <h2 className="text-4xl font-satoshiBold text-primaryOrange text-center mb-8">
+        Our Members
       </h2>
-      <div className="grid grid-cols-2 gap-8">
-        {/* Member 1 */}
-        <div className="flex flex-col items-center">
-          <p className="font-satoshiMedium text-[18px] text-primaryOrange">Member 1</p>
-        </div>
-        {/* Member 2 */}
-        <div className="flex flex-col items-center">
-          <p className="font-satoshiMedium text-[18px] text-primaryOrange">Member 2</p>
-        </div>
-        {/* Add more members as needed */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {members.map((member, index) => (
+          <MemberCard
+            key={index}
+            name={member.name}
+            title={member.title}
+            image={member.image}
+            bio={member.bio}
+          />
+        ))}
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default Members;
