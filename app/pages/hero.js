@@ -26,7 +26,7 @@
 //             </div>
 //   );
 // }
-import TitleCard from '@/components/ui/TitleCard';
+import TitleCard from './titleCard';
 import { TypewriterEffect } from '@/components/ui/typewriter-effect';
 
 export default function HeroSection() {
