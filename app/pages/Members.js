@@ -17,7 +17,7 @@ const members = [
     port: 'https://github.com/Ayushpdx05'
   },
   {
-    name: 'Mandaakini',
+    name: 'Mandaakini Raghuraman',
     title: 'Vice President',
     image: '/images/mandaakini.png',
     linkedinUrl: 'https://www.linkedin.com/in/mandaakini-raghuraman/',
@@ -30,25 +30,25 @@ const members = [
     port: 'https://tankit03.github.io/Personal-Portfolio/',
   },
   {
-    name: 'Cyrus',
+    name: 'Cyrus Shafizadeh',
     title: 'Operations Consultant',
     image: '/images/cryus.png',
     linkedinUrl: 'https://www.linkedin.com/in/cshafizadeh/',
   },
   {
-    name: 'Ankith',
+    name: 'Ankith Shridhar',
     title: 'Operations Consultant',
     image: '/images/ankith.png',
    linkedinUrl: 'https://www.linkedin.com/in/ankithsridhar/',
   },
   {
-    name: 'Mithun',
+    name: 'Mithun Karthikeyan',
     title: 'Financial Consultant',
     image: '/images/mithun.png',
     linkedinUrl: 'https://www.linkedin.com/in/mithunkarth/',
   },
   {
-    name: 'Srija',
+    name: 'Srija Palla',
     title: 'Technical Consultant',
     image: '/images/srija.png',
     linkedinUrl: 'https://www.linkedin.com/in/srija-palla-936b142b5/',
