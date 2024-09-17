@@ -1,15 +1,20 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from 'next/image';
 
 // components/MemberCard.js
 const MemberCard = ({ name, title, image, linkedinUrl, port }) => {
-
-  
-
     return (
         <div className="bg-primaryWhite shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105 m-4">
-            <img src={image} alt={name} className="w-full h-48 object-cover" />
+            {/* Add width and height to the Image component */}
+            <Image 
+                src={image} 
+                alt={name} 
+                width={500}  // Adjust this width based on your image dimensions
+                height={300} // Adjust this height based on your image dimensions
+                className="w-full h-48 object-cover" 
+            />
             <div className="p-6">
                 <h2 className="text-xl font-satoshiBold text-primaryOrange">{name}</h2>
                 <p className="font-satoshiBold text-primaryBlack">{title}</p>

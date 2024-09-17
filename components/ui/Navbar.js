@@ -19,7 +19,9 @@ export default function Navbar() {
               <a href="#contact">Contact</a> {/* Scroll to the Contact section */}
             </li>
             <div>
-              <Button>Join Us</Button>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc74pbQOZVOnGhhrxS5W6pvEFJ8dYX_7fkvivTTyqMME_o8fQ/viewform" passHref>
+                <Button>Join Us</Button>
+              </Link>
             </div>
           </ul>
         </div>
