@@ -44,7 +44,7 @@ export const TextGenerateEffect = ({
     (<div className={cn("font-satoshiBold", className)}>
       <div>
         <div
-          className="text-primaryOrange text-[46px] leading-snug tracking-wide">
+          className="text-primaryOrange text-bold text-[50px] leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

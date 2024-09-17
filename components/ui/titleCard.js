@@ -15,7 +15,7 @@ export default function TitleCard() {
             }}
         >
             <div className="text-left pr-6 pl-6 items-start">
-                <h1 id="typewriter" className="font-satoshiBold text-[46px] font-normal font-bold text-primaryOrange leading-tight pb-6">
+                <h1 id="typewriter" className="font-satoshiBlack font-normal font-bold text-primaryOrange leading-tight pb-6">
                     <TextGenerateEffect words="Oregon" />
                     <TextGenerateEffect words="Software" />
                     <TextGenerateEffect words="Consulting" />

@@ -5,76 +5,81 @@ const members = [
   {
     name: 'Kaushik Dontula',
     title: 'President',
-    image: '/images/kaushik.png', // Replace with actual image paths
-    bio: 'John is the president of the club and loves organizing events.',
+    image: '/images/kaushik.png',
+    linkedinUrl: 'https://www.linkedin.com/in/kaushikdontula/',
+    port: 'https://kaushikdontula.github.io/Kaushiks_portfolio/',
   },
   {
     name: 'Ayush Singh',
     title: 'Co-President',
     image: '/images/ayush.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/kaushikdontula/',
+    port: 'https://github.com/Ayushpdx05'
   },
   {
     name: 'Mandaakini',
     title: 'Vice President',
     image: '/images/mandaakini.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/mandaakini-raghuraman/',
   },
   {
     name: 'Tanish Hupare',
     title: 'Operations Manager',
     image: '/images/tanish.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/tanish-hupare/',
+    port: 'https://tankit03.github.io/Personal-Portfolio/',
   },
   {
     name: 'Grant Towers',
     title: 'Technical Consultant',
     image: '/images/grant.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/grant-towers1/',
+    port: 'https://github.com/GTowers1'
   },
   {
     name: 'Cyrus',
     title: 'Operations Consultant',
     image: '/images/cryus.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/cshafizadeh/',
   },
   {
     name: 'Ankith',
     title: 'Operations Consultant',
     image: '/images/ankith.png',
-    bio: 'Jane is the vice president and manages club activities.',
+   linkedinUrl: 'https://www.linkedin.com/in/ankithsridhar/',
   },
   {
     name: 'Mithun',
     title: 'Financial Consultant',
     image: '/images/mithun.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/mithunkarth/',
   },
   {
     name: 'Srija',
     title: 'Technical Consultant',
     image: '/images/srija.png',
-    bio: 'Jane is the vice president and manages club activities.',
+    linkedinUrl: 'https://www.linkedin.com/in/srija-palla-936b142b5/',
   },
 ];
 
 const Members = () => {
   return (
     <div className="container mx-auto py-12 px-6">
-      <h2 className="text-4xl font-satoshiBold text-center mb-8">
+      <h2 className="text-4xl font-satoshiBold text-center mb-8 text-primaryOrange">
         Our Members
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {members.map((member, index) => (
-          <MemberCard
-            key={index}
-            name={member.name}
-            title={member.title}
-            image={member.image}
-            bio={member.bio}
-          />
-        ))}
-      </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {members.map((member, index) => (
+              <MemberCard
+                key={index}
+                name={member.name}
+                title={member.title}
+                image={member.image}
+                linkedinUrl={member.linkedinUrl}
+                port={member.port}
+              />
+            ))}
+          </div>
     </div>
   );
 };
