@@ -10,9 +10,9 @@ export default function HeroSection() {
                     <TypewriterEffect
                     words={[
                         { text: "What", className: "font-satoshiBold text-primaryOrange text-[36px]" },
-                        { text: "do", className: "font-satoshiBold text-primaryOrange text-[36px]" },
+                        { text: "Do", className: "font-satoshiBold text-primaryOrange text-[36px]" },
                         { text: "We", className: "font-satoshiBold text-primaryOrange text-[36px]" },
-                        { text: "do ?", className: "font-satoshiBold text-primaryOrange text-[36px]" }
+                        { text: "Do ?", className: "font-satoshiBold text-primaryOrange text-[36px]" }
                     ]}
                     />
                     <p className="font-satoshiMedium text-[18px] max-w-3xl text-left text-strongBlack">
@@ -24,6 +24,5 @@ export default function HeroSection() {
                     </p>
                 </div>
             </div>
-
   );
 }

@@ -1,5 +1,6 @@
 import ContactCard from "@/components/ui/ContactCard";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import Link from "next/link";
 
 
 export default function Contact() {
@@ -25,16 +26,19 @@ export default function Contact() {
                     <h2 className="font-satoshiBold text-[24px] text-primaryOrange">
                         Instagram:
                     </h2>
-                    <p className="font-satoshiRegular text-[18px] max-w-3xl text-left text-primaryWhite">
-                        @oregonscg
-                    </p>
+                    <Link href="https://www.instagram.com/oscgosu/">
+                        <p className="font-satoshiRegular text-[18px] max-w-3xl text-left text-primaryWhite">
+                            @oscgosu
+                        </p>
+                    </Link>
                     <h2 className="font-satoshiBold text-[24px] text-primaryOrange">
                         LinkedIn:
                     </h2>
-                    <p className="font-satoshiRegular text-[18px] max-w-3xl text-left text-primaryWhite">
-                        1234 Oregon Hall, Eugene, OR 97403
-                    </p>
-
+                    <Link href="https://www.linkedin.com/company/oregon-software-consulting-group">
+                        <p className="font-satoshiRegular text-[18px] max-w-3xl text-left text-primaryWhite">
+                        @Oregon-Software-Consulting-Group 
+                        </p>
+                    </Link>
                 </div>
             </div>
         </>

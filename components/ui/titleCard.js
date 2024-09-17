@@ -20,7 +20,7 @@ export default function TitleCard() {
                  <span className="line">Group</span>
              </h1>
                 <p className="font-satoshiLight text-strongBlack">
-                    Event-driven working together to achieve excellence in software consulting and development.
+                    Result-driven students working together to achieve excellence in software consulting and development.
                 </p>
             </div>
         </div>

@@ -13,7 +13,7 @@ const members = [
     name: 'Ayush Singh',
     title: 'Co-President',
     image: '/images/ayush.png',
-    linkedinUrl: 'https://www.linkedin.com/in/kaushikdontula/',
+    linkedinUrl: 'https://www.linkedin.com/in/ayush0508/',
     port: 'https://github.com/Ayushpdx05'
   },
   {
@@ -24,17 +24,10 @@ const members = [
   },
   {
     name: 'Tanish Hupare',
-    title: 'Operations Manager',
+    title: 'Operations Consultant',
     image: '/images/tanish.png',
     linkedinUrl: 'https://www.linkedin.com/in/tanish-hupare/',
     port: 'https://tankit03.github.io/Personal-Portfolio/',
-  },
-  {
-    name: 'Grant Towers',
-    title: 'Technical Consultant',
-    image: '/images/grant.png',
-    linkedinUrl: 'https://www.linkedin.com/in/grant-towers1/',
-    port: 'https://github.com/GTowers1'
   },
   {
     name: 'Cyrus',
@@ -59,6 +52,13 @@ const members = [
     title: 'Technical Consultant',
     image: '/images/srija.png',
     linkedinUrl: 'https://www.linkedin.com/in/srija-palla-936b142b5/',
+  },
+  {
+    name: 'Grant Towers',
+    title: 'Technical Consultant',
+    image: '/images/grant.png',
+    linkedinUrl: 'https://www.linkedin.com/in/grant-towers1/',
+    port: 'https://github.com/GTowers1'
   },
 ];
 
