@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "./button";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,11 @@ export default function Navbar() {
         {/* Logo on the left */}
         <div className="text-xl md:pl-12">
           <Link href="#home" passHref>
-            <img 
+            <Image
               src="/images/OSCG.png" 
               alt="OSCG Logo" 
-              className="h-24 w-auto" 
+              width={80}  // Adjust this width based on your image dimensions
+              height={80} // Adjust this height based on your image dimensions
             />
           </Link>
         </div>
