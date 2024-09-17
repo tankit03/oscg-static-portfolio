@@ -1,9 +1,9 @@
-"use client"; // Mark as a Client Component
+'use client'; // Mark as a Client Component
 
-import { useState } from "react";
-import Link from "next/link";
-import { Button } from "./button";
-import Image from "next/image";
+import { useState } from 'react';
+import Link from 'next/link';
+import { Button } from './button';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,16 +13,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full flex flex-col pt-4 pb-4 font-satoshiBold text-primaryOrange">
+    <nav className="w-full flex flex-col font-satoshiBold text-primaryOrange">
       <div className="flex justify-between items-center px-4 w-full">
         {/* Logo on the left */}
         <div className="text-xl md:pl-12">
           <Link href="#home" passHref>
             <Image
-              src="/images/OSCG.png" 
-              alt="OSCG Logo" 
-              width={80}  // Adjust this width based on your image dimensions
-              height={80} // Adjust this height based on your image dimensions
+              src="/images/OSCG.png"
+              alt="OSCG Logo"
+              width={60} // Adjust this width based on your image dimensions
+              height={60} // Adjust this height based on your image dimensions
             />
           </Link>
         </div>
@@ -45,9 +45,13 @@ export default function Navbar() {
 
         {/* Join Us Button on Desktop */}
         <div className="hidden md:block md:pr-16">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc74pbQOZVOnGhhrxS5W6pvEFJ8dYX_7fkvivTTyqMME_o8fQ/viewform" passHref>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc74pbQOZVOnGhhrxS5W6pvEFJ8dYX_7fkvivTTyqMME_o8fQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button>Join Us</Button>
-          </Link>
+          </a>
         </div>
 
         {/* Hamburger Icon for Mobile (right aligned) */}
@@ -75,19 +79,30 @@ export default function Navbar() {
       {isOpen && (
         <ul className="flex flex-col space-y-4 mt-4 text-center md:hidden">
           <li>
-            <a href="#home" onClick={toggleMenu}>Home</a>
+            <a href="#home" onClick={toggleMenu}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#members" onClick={toggleMenu}>Members</a>
+            <a href="#members" onClick={toggleMenu}>
+              Members
+            </a>
           </li>
           <li>
-            <a href="#project" onClick={toggleMenu}>Project</a>
+            <a href="#project" onClick={toggleMenu}>
+              Project
+            </a>
           </li>
           <li>
-            <a href="#contact" onClick={toggleMenu}>Contact</a>
+            <a href="#contact" onClick={toggleMenu}>
+              Contact
+            </a>
           </li>
           <li>
-            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc74pbQOZVOnGhhrxS5W6pvEFJ8dYX_7fkvivTTyqMME_o8fQ/viewform" passHref>
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc74pbQOZVOnGhhrxS5W6pvEFJ8dYX_7fkvivTTyqMME_o8fQ/viewform"
+              passHref
+            >
               <Button>Join Us</Button>
             </Link>
           </li>
@@ -96,11 +111,6 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
-
-
-
 
 // import Link from "next/link";
 // import { Button } from "./button";

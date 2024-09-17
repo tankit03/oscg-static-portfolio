@@ -14,7 +14,7 @@ const members = [
     title: 'Co-President',
     image: '/images/ayush.png',
     linkedinUrl: 'https://www.linkedin.com/in/ayush0508/',
-    port: 'https://github.com/Ayushpdx05'
+    port: 'https://github.com/Ayushpdx05',
   },
   {
     name: 'Mandaakini Raghuraman',
@@ -34,12 +34,13 @@ const members = [
     title: 'Operations Consultant',
     image: '/images/cryus.png',
     linkedinUrl: 'https://www.linkedin.com/in/cshafizadeh/',
+    port: 'https://www.cyrusshafizadeh.com',
   },
   {
     name: 'Ankith Shridhar',
     title: 'Operations Consultant',
     image: '/images/ankith.png',
-   linkedinUrl: 'https://www.linkedin.com/in/ankithsridhar/',
+    linkedinUrl: 'https://www.linkedin.com/in/ankithsridhar/',
   },
   {
     name: 'Mithun Karthikeyan',
@@ -58,7 +59,7 @@ const members = [
     title: 'Technical Consultant',
     image: '/images/grant.png',
     linkedinUrl: 'https://www.linkedin.com/in/grant-towers1/',
-    port: 'https://github.com/GTowers1'
+    port: 'https://github.com/GTowers1',
   },
 ];
 
@@ -68,18 +69,18 @@ const Members = () => {
       <h2 className="text-4xl font-satoshiBold text-center mb-8 text-primaryOrange">
         Our Members
       </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {members.map((member, index) => (
-              <MemberCard
-                key={index}
-                name={member.name}
-                title={member.title}
-                image={member.image}
-                linkedinUrl={member.linkedinUrl}
-                port={member.port}
-              />
-            ))}
-          </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {members.map((member, index) => (
+          <MemberCard
+            key={index}
+            name={member.name}
+            title={member.title}
+            image={member.image}
+            linkedinUrl={member.linkedinUrl}
+            port={member.port}
+          />
+        ))}
+      </div>
     </div>
   );
 };
