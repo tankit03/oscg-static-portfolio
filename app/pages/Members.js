@@ -1,5 +1,5 @@
 // pages/members.js
-import MemberCard from '@/components/ui/MemberCard';
+import MemberCard from './MemberCard';
 
 const members = [
   {
