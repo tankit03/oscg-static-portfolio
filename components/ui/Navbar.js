@@ -90,7 +90,7 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#project" onClick={toggleMenu}>
-              Project
+              Projects
             </a>
           </li>
           <li>
