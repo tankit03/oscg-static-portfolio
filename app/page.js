@@ -1,5 +1,5 @@
 import Navbar from '../components/ui/Navbar';
-import Members from './pages/members';
+import Members from './pages/Members';
 import HeroSection from './pages/hero';
 import Project from './pages/project';
 import Contact from './pages/contact';
