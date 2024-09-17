@@ -1,10 +1,7 @@
-import Image from "next/image";
+
 import Navbar from "../components/ui/Navbar";
-import TitleCard from "../components/ui/TitleCard";
 import Members from "./pages/members"; 
-import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import HeroSection from "./pages/hero";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import Project from "./pages/project";
 import Contact from "./pages/contact";
 

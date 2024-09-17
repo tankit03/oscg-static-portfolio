@@ -37,7 +37,7 @@ const satoshiLight = localFont({
 });
 
 const satoshiMedium = localFont({
-  src: '/fonts/Satoshi-medium.otf',
+  src: '/fonts/Satoshi-Medium.otf',
   weight: '500',
   style: 'normal',
   variable: '--font-satoshi-medium',
