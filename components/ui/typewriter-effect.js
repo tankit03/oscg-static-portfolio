@@ -32,7 +32,7 @@ export const TypewriterEffect = ({
         ease: "easeInOut",
       });
     }
-  }, [isInView]);
+  }, [isInView, animate]); // Add 'animate' to the dependency array
 
   const renderWords = () => {
     return (
